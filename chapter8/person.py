@@ -13,7 +13,7 @@ print("let's try to add extra dimensions to this ")
 def build_person(first_name, last_name, age=None): # what does 'none' do that an empty string doesn't?
     """Return a dicitonary of information about a person"""
     person = {'first': first_name, 'last': last_name}
-    if age:
+    if age: #if age is present in the parameter, run the next line
         person['age']= age
     return person
 
