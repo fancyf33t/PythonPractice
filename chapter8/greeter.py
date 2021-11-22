@@ -39,3 +39,26 @@ while True:
         break
     formatted_name = get_formatted_name(f_name, l_name)
     print(f"\nHello, {formatted_name}!")
+print('**************************************')
+
+def give_vehicle_info(make, model, year):
+    """Return vehicle information neatly"""
+    vehicle = f"So you are interested in a {year} {make.title()} {model.title()}."
+    return vehicle
+
+while True:
+    print('\nWhat car do you want?')
+    print("(enter 'q' at any time to quit)")
+
+    question1 = input('What is the make?')
+    if question1 == 'q':
+        break
+    question2 = input('What about the year?')
+    if question2 == 'q':
+        break
+    question3 = input('How about the model?')
+    if question3 == 'q':
+        break
+    vehicle_information = give_vehicle_info(question1, question2, question3)
+    print(f"{vehicle_information}")
+print('**************************')

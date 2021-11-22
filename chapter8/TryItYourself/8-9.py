@@ -28,7 +28,8 @@ guest_list = [
     'rhea',
     'michael'
 ]
-show_names(guest_list)
+new_list = []
+show_names(guest_list, new_list[:])
 print(f"\nle'ts try this again...")
 
-
+# function_name(list_name[:]) let's you send a copy of a list to send the function
