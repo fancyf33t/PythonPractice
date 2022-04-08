@@ -7,7 +7,7 @@ root = Tk()
 # root window title and dimension
 root.title("Welcome to GeekForGeeks")
 # Set geometry(widthxheight)
-root.geometry('350x200')
+root.geometry('400x250')
 
 # adding menu bar in root window
 # new item in menu bar labelled as 'New'
@@ -20,7 +20,7 @@ root.config(menu=menu)
 
 # adding a label to the root window
 lbl = Label(root, text = "Are you a Geek?")
-lbl.grid()
+lbl.grid(column=1, row=1)
 
 # adding Entry Field
 txt = Entry(root, width=10)
